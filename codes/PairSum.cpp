@@ -7,11 +7,11 @@ using namespace std;
 
 void solve(string &s)
 {
-    stack<char> st;
+    stack <char> st;
     string str;
-    for(int i=0;i<s.size();i++)
+    for(int i = 0 ; i < s.size() ; i++)
     {
-        if(st.empty() || st.top()!=s[i])
+        if(st.empty() || st.top() != s[i])
         {
             st.push(s[i]);
         }
@@ -28,11 +28,11 @@ void solve(string &s)
         st.pop();
     }
     reverse(str.begin(),str.end());
-    cout<<str;
+    cout << str;
 }
 int main() {
     int r;
-    string s="aabbcc";
+    string s = "aabbcc";
     solve(s);
     return 0;
 }
