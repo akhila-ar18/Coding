@@ -1,5 +1,6 @@
 
-/* Problem Statement: Given a string with repeated characters, we have to insert "*" between the pair of identical characters
+/* Problem Statement: Given an array and a value. Find if there exists three numbers whose sum is equal to the given value.
+
 Examples: 
 1.  Input: a[] = {12,3,7,1,6,9}, target = 24
     Output : 1 or true (12,3,9) 
