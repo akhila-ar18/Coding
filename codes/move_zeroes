@@ -1,0 +1,35 @@
+/* Problem Statement: Given an array and a value. Find if there exists three numbers whose sum is equal to the given value.
+
+Examples: 
+1.  Input: a[] = {10,8,0,0,12,0}
+    Output : a[] = {10,8,12,0,0,0}
+2.  Input: a[] = {0,0,0,10,0}
+    Output : a[] = {10,0,0,0,0}
+3.  Input: a[] = {0}
+    Output : a[] = {0}
+*/
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve(int a[],int n)
+{
+    int count=0;
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]!=0)
+        {
+            swap(a[i],a[count]);
+            count++;
+        }
+    }
+    for(int i = 0; i < n; i++)
+        cout<<a[i]<<" ";
+}
+
+int main() {
+    int a[] = {10,8,0,0,12,0};
+    int n = sizeof(a) / sizeof(a[0]);
+    cout<<solve(a,n);
+    return 0;
+}
