@@ -50,7 +50,6 @@ int main() {
     int n = sizeof(a)/sizeof(a[0]);
     vector<int> ans = solve(a,n,3);
     for(auto &i:ans)
-      cout << i 
-      <<" ";
+      cout << i <<" ";
     return 0;
 }
